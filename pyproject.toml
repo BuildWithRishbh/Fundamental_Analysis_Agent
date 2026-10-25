@@ -1,0 +1,23 @@
+[project]
+name = "fundamental-analysis-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rishabh  Shukla", email = "rishabh.shukla8@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "financetoolkit>=2.2.3",
+    "openai>=3.37.0",
+    "openai-agents>=0.24.0",
+    "pandas>=3.1.0",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+fundamental-analysis-agent = "fundamental_analysis_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
